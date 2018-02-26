@@ -1,12 +1,13 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
 
-    [Tooltip("In ms^-1")][SerializeField] float speed = 20f;
+    [Tooltip("In ms^-1")] [SerializeField] float speed = 20f;
     [Tooltip("In m")] [SerializeField] float xRange = 5f;
     [Tooltip("In m")] [SerializeField] float yRange = 3f;
 
@@ -16,14 +17,33 @@ public class Player : MonoBehaviour {
     [SerializeField] float controlRollFactor = -20f;
 
     float xThrow, yThrow;
+    public GameObject explosion;
+    // Use this for initialization
+    void Start()
+    {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "friendlyBullet") 
+        {
+
+        }
+        else if (other.gameObject.tag == "enemyShip")
+        {
+
+        }
+        else
+        {
+            print("Player triggered something");
+            GameObject newExplosion = Instantiate(explosion, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         ProcessTranslation();
         ProcessRotation();
