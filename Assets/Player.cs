@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class Player : MonoBehaviour
             print("Player triggered something");
             GameObject newExplosion = Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
+            Invoke("ReloadScene", 1f);
+            SceneManager.LoadScene(1);
         }
     }
 
