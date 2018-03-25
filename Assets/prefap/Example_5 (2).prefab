@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33597118154024314}
   - component: {fileID: 23846633561627506}
   - component: {fileID: 114220753757834306}
+  - component: {fileID: 95109175388923064}
   m_Layer: 0
   m_Name: Example_5 (2)
   m_TagString: enemyShip
@@ -83,6 +84,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1740378956089158}
   m_Mesh: {fileID: 4300006, guid: 6c11e79470dad4b4bb66b279d2660007, type: 3}
+--- !u!95 &95109175388923064
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740378956089158}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114220753757834306
 MonoBehaviour:
   m_ObjectHideFlags: 1

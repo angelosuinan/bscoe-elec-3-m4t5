@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33131995114293188}
   - component: {fileID: 23556274295254360}
   - component: {fileID: 114718457927787146}
+  - component: {fileID: 95041581138344568}
   m_Layer: 0
   m_Name: Example_4
   m_TagString: Untagged
@@ -83,6 +84,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1486293750558176}
   m_Mesh: {fileID: 4300004, guid: 6c11e79470dad4b4bb66b279d2660007, type: 3}
+--- !u!95 &95041581138344568
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1486293750558176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114718457927787146
 MonoBehaviour:
   m_ObjectHideFlags: 1

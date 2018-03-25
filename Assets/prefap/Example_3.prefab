@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33698348018341052}
   - component: {fileID: 23086321965370072}
   - component: {fileID: 114603959831661970}
+  - component: {fileID: 95188662394418262}
   m_Layer: 0
   m_Name: Example_3
   m_TagString: Untagged
@@ -83,6 +84,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1163534140200990}
   m_Mesh: {fileID: 4300002, guid: 6c11e79470dad4b4bb66b279d2660007, type: 3}
+--- !u!95 &95188662394418262
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1163534140200990}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114603959831661970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,6 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8169fc985794b41b953ec062781ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
+  explosion: {fileID: 1190256061717636, guid: 8c784bbc09065c74db2a41a27279697a, type: 2}
   score: 12
   hp: 1
